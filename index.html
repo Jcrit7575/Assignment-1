@@ -10,13 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is an HTML page">
     <meta name="keywords" content="HTML, CSS">
-    <title> HTML Website </title>
+    <title> HTML Website about Albert Einstein </title>
 </head>
 
 <body>
     <!--Creation of header with h1 heading-->
     <header>
-        <h1> This is my h1 heading </h1>
+        <h1> Albert Einstein information </h1>
     </header>
     <main>
         <!--Section 1 with a biography-->
@@ -68,6 +68,31 @@
                 </li>
                 <li><a href="https://www.astronomy.com/" target="_blank" title="External Site 3"></a></li>
             </ul>
+        </section>
+        <!--Aside Section 2 with contact forms-->
+        <section id="asidesection2">
+            <h2> Contact forms </h2>
+            <form action="#" method="post">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required placeholder="Your name">
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="Your email"
+                    autofocus>
+
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-control" required
+                    placeholder="Your message"></textarea>
+
+                <label for="topic" class="form-label">Topic:</label>
+                <select id="topic" name="topic" class="form-control" required>
+                    <option value="Bug report">Bug report</option>
+                    <option value="Suggestions">Suggestions</option>
+                    <option value="Questions">Questions</option>
+                </select>
+
+                <input type="submit" value="Submit" class="form-control">
+            </form>
         </section>
     </aside>
 </body>
